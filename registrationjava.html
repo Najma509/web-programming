@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Welcome To Login Form</title>
+<script>
+function login()
+{
+   varuname=document.getElementById("email").value;
+   varpwd=document.getElementById("pwd1").value;
+   varfilter=/^([a-z A-Z 0-9_\.\-]+\@(([a-z A-Z 0-9\-]=\.)+\.)+([a-z A-Z 0-9]{2,4})+$/;
+   if("uname==")
+   {
+      alert("please enter user name.");
+   }
+   else if("pwd==")
+   {
+      alert("Enter the password");
+   }
+   else if(!filter.test(uname))
+   {
+      alert("Enter valid email.");
+   }
+   else if(pwd.length<6 ||pwd.length>6)
+   {
+      alert("Password min and max length is 6");
+   }
+   else
+   {
+      alert("Login sucess");
+   }
+}
+function clearfunc()
+{   
+    document.getElementById("email").value="";
+    document.getElementById(pwd1").value="";
+}
+</script>
+</head>
+<body>
+<div id="main">
+<div class="h=tag">
+<h2 align="center">Welcome To my Account Login</h2>
+</div>
+<div class="login">
+<table cellspacing="2" align="center"cellpadding="8" border="0">
+<tr>
+<td>Enter UserName:</td>
+<td><input type="text"Placeholder="Enter username here."id="pwd1"class="tb"/></td>
+</tr>
+<tr>
+<td>Enter Password:</td>
+<td><input type="text"Placeholder="Enter password here."id="pwd1 class="tb"/></td>
+</tr>
+<tr><td></td>
+<td>
+<input type="Submit" value="Reset" onClick="clearfunc()" class="btn"/>
+<input type="Submit" value="Login" class="btn" onClick="login()"/></td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+     
